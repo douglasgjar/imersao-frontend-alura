@@ -1,0 +1,52 @@
+:root{
+    --cor-1: #fff;
+    --cor-2: #000;
+    --cor-3: #121212;
+}
+
+body {
+    background-color: var(--cor-2);
+    color: var(--cor-1);
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    padding: 12px;
+}
+
+.sidebar ul {
+    padding: 8px 0;
+}
+
+.sidebar li {
+    padding: 8px 8px 8px 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    font-family: "DM sans", sans-serif;
+    color: var(--cor-1);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.sidebar-navigation {
+    background-color: var(--cor-3);
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-3);
+    border-radius: 8px;
+}
+
+.logo img {
+    width: 80px;
+}
