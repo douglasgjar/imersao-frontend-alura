@@ -2,6 +2,8 @@
     --cor-1: #fff;
     --cor-2: #000;
     --cor-3: #121212;
+    --cor-4: #3f3f3f;
+    --cor-5: #787878;
 }
 
 body {
@@ -15,15 +17,15 @@ body {
     bottom: 0;
     left: 0;
     width: 300px;
-    padding: 12px;
+    padding: 2px;
 }
 
 .sidebar ul {
-    padding: 8px 0;
+    padding-top: 8px;
 }
 
 .sidebar li {
-    padding: 8px 8px 8px 0;
+    padding: 10px 0 10px 5px;
 }
 
 .sidebar nav ul li a {
@@ -36,7 +38,8 @@ body {
 
 .sidebar-navigation {
     background-color: var(--cor-3);
-    padding: 16px;
+    margin: 8px;
+    padding: 14px;
     border-radius: 8px;
 }
 
@@ -49,4 +52,102 @@ body {
 
 .logo img {
     width: 80px;
+}
+
+.library {
+    background-color: var(--cor-3);
+    margin: 8px;
+    padding: 8px;
+    border-radius: 12px;
+    font-family: "DM sans", sans-serif;
+}
+
+.library-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.library-content-button {
+    border: none;
+    background: none;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.section-playlist {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-4);
+    border-radius: 8px;
+    padding: 8px;
+    margin: 8px 2px;
+
+}
+
+.section-playlist-content {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    margin: 8px 2px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.subtitle {
+    font-size: 12px;
+}
+
+.title, .subtitle {
+    padding-bottom: 14px;
+}
+
+.section-playlist-button {
+    border: none;
+    outline: none;
+    margin-top: 4px;
+    padding: 12px;
+    width: 120px;
+    background-color: var(--cor-1);
+    border-radius: 20px;
+}
+
+.section-playlist-button > span {
+    color: var(--cor-2);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.cookies {
+    margin: 8px 0 8px 16px;
+}
+
+.cookies > a {
+    text-decoration: none;
+    color: var(--cor-5);
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.cookies > a:hover {
+    text-decoration: underline;
+}
+
+.language {
+    margin: 8px 0 8px 16px;
+    padding-top: 4px;
+}
+
+.language-button {
+    border: 1px solid var(--cor-1);
+    border-radius: 20px;
+    background: transparent;
+    padding: 12px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
 }
