@@ -4,6 +4,8 @@
     --cor-3: #121212;
     --cor-4: #3f3f3f;
     --cor-5: #787878;
+    --cor-6: rgb(69, 183, 69);
+    --font-1: "DM sans", sans-serif;
 }
 
 body {
@@ -30,7 +32,7 @@ body {
 
 .sidebar nav ul li a {
     text-decoration: none;
-    font-family: "DM sans", sans-serif;
+    font-family: var(--font-1);
     color: var(--cor-1);
     font-weight: 600;
     font-size: 14px;
@@ -59,7 +61,7 @@ body {
     margin: 8px;
     padding: 8px;
     border-radius: 12px;
-    font-family: "DM sans", sans-serif;
+    font-family: var(--font-1);
 }
 
 .library-content {
@@ -71,7 +73,7 @@ body {
 .library-content-button {
     border: none;
     background: none;
-    color: white;
+    color: var(--cor-1);
     font-weight: 700;
     font-size: 14px;
 }
@@ -147,7 +149,41 @@ body {
     border-radius: 20px;
     background: transparent;
     padding: 12px;
-    color: white;
+    color: var(--cor-1);
     cursor: pointer;
     font-weight: bold;
+}
+
+footer {
+    background-color: var(--cor-6);
+    padding: 16px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-1);
+    color: var(--cor-1);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.footer-text > p {
+    padding: 4px;
+}
+
+#footer-button {
+    outline: none;
+    border: none;
+    background-color: var(--cor-1);
+    border-radius: 20px;
+    font-weight: 700;
+    padding: 12px;
+    cursor: pointer;
 }
