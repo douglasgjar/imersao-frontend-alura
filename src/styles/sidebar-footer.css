@@ -1,13 +1,3 @@
-:root{
-    --cor-1: #fff;
-    --cor-2: #000;
-    --cor-3: #121212;
-    --cor-4: #3f3f3f;
-    --cor-5: #787878;
-    --cor-6: rgb(69, 183, 69);
-    --font-1: "DM sans", sans-serif;
-}
-
 body {
     background-color: var(--cor-2);
     color: var(--cor-1);
@@ -155,30 +145,36 @@ body {
 }
 
 footer {
-    background-color: var(--cor-6);
-    padding: 16px;
-    width: 100%;
     position: fixed;
     bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to right, rgb(205, 64, 151), purple, rgb(77, 77, 210));
+    padding: 12px 8px;
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    justify-content: space-between;
+    margin: 8px;
 }
 
 .footer-text {
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
+}
+
+.footer-text-title, .footer-text-subtitle {
     font-family: var(--font-1);
     color: var(--cor-1);
     font-size: 14px;
     font-weight: bold;
+    padding: 2px;
 }
 
-.footer-text > p {
-    padding: 4px;
+.footer-text-subtitle {
+    font-weight: 300;
 }
 
-#footer-button {
+.footer-button > button {
     outline: none;
     border: none;
     background-color: var(--cor-1);
