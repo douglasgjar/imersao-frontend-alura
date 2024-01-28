@@ -4,7 +4,7 @@ main {
 }
 
 .main-container {
-    margin-left: 425px;
+    margin-left: 28.35vw;
     margin-right: 8px;
 }
 
@@ -16,7 +16,6 @@ main {
     margin: 10px 8px 0 10px;
     border-radius: 8px 8px 0 0;
     background-color: var(--cor-3);
-    width: 68.5vw;
 }
 
 .navigation {
@@ -151,21 +150,11 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 16px;
-
-  /* CODIGO COM JS CALCULANDO OS CARDS POR COLUNA 
-  display: grid;   define o modelo de layout do elemento como uma grade *
-  gap: 16px;
-  grid-gap: 32px;   não é usado mais 
-  margin: 0 auto;*/
 }
 
 /* POSITION */
-/* principais são static, relative, absolute, fixed, e sticky. */
-
 .cards {
-  position: relative; /* relative:
-                          Comportamento em relação a si mesmo: O elemento é posicionado em relação à sua posição original.
-                          Mantém espaço original: O espaço original que o elemento ocuparia não é alterado, mas você pode movê-lo com top, right, bottom ou left. */
+  position: relative; 
   width: 185px;
   height: 200px;
   overflow: hidden;
@@ -269,11 +258,11 @@ main {
   padding: 16px;
   position: relative;
   transition: background-color 0.3s ease;
-  width: 100%;
+  width: 15%;
 }
 
 .artist-card:hover {
-  background-color: #252525;
+  background-color: var(--cor-4);
 }
 
 .card-img {
@@ -331,7 +320,7 @@ main {
   right: 10px;
   top: 120px;
   padding: 18px;
-  background-color: #1db954;
+  background-color: var(--cor-6);
   border-radius: 100%;
   font-size: 14px;
   opacity: 0;
